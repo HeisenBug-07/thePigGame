@@ -29,6 +29,8 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
         document.querySelector('.dice').style.display = 'none';
         // winning condition
         if (scores[activePlayer] >= 100){
+            var audio = new Audio("crash.mp3");
+            audio.play();
             document.getElementById('name-' + activePlayer).textContent = 'WINNER';
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
