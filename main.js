@@ -12,10 +12,14 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
         // updating the round score
         if (dice !==1 ){
             // adding round score
+            var audio = new Audio("kick-bass.mp3");
+            audio.play();
             roundScore +=dice;
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
         }
         else{
+            var audio = new Audio("tom-1.mp3");
+            audio.play();
             nextPlayer();
         }
     }
@@ -24,6 +28,8 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
 // holding score
 document.querySelector('.btn-hold').addEventListener('click', function(){
     if (gamePlaying){
+        var audio = new Audio("tom-1.mp3");
+        audio.play();
         scores[activePlayer] += roundScore;
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
         document.querySelector('.dice').style.display = 'none';
@@ -60,6 +66,8 @@ document.querySelector('.btn-new').addEventListener('click', init);
 // new game
 function init(){
     // initilizing everything
+    var audio = new Audio("snare.mp3");
+    audio.play();
     scores = [0,0];
     roundScore = 0;
     activePlayer = 0;
