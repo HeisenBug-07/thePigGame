@@ -18,6 +18,27 @@
     </head>
 
     <body>      
+               
+        <!-- Button trigger modal -->
+        <button class="btn btn-light btn-rule" data-toggle="modal" data-target="#exampleModal">
+        <i class="ion-ios-plus-outline"></i> Rules  
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Rule</h5>
+                </div>
+                <div class="modal-body">
+                    <p> - The player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn</p>
+                    <p> - The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn</p>
+                    <p> - The first player to reach 100 points on GLOBAL score wins the game</p>                    
+                </div>
+            </div>
+            </div>
+        </div>
 
         <div class="wrapper clearfix">
             <div class="player-0-panel active">
