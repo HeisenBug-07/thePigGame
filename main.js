@@ -79,7 +79,7 @@ function init(){
     document.getElementById('current-1').textContent = '0';
     // reseting players
     document.getElementById('name-0').textContent = 'PLAYER 1';
-    document.getElementById('name-1').textContent = 'PLAYER 1';
+    document.getElementById('name-1').textContent = 'PLAYER 2';
     // removing winner class
     document.querySelector('.player-0-panel').classList.remove('winner');
     document.querySelector('.player-1-panel').classList.remove('winner');
